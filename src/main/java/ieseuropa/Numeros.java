@@ -10,12 +10,10 @@ public class Numeros {
             n1 = n2;
             n2 = pell;
         }
-	}
-
-	public static void main(String[] args) {
+  }
+  public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		numerosPell();
-
-	}
+  }
 
 }
