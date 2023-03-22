@@ -7,9 +7,14 @@ public class Strings {
       System.out.print (a + " " + b + " ");
     }
   }
+  private static int longitud(String nombre) {
+		return nombre.length();
+	}
   public static void main(String[] args) {
 		// TODO Auto-generated method stub
     repeticionStrings("hola", "caracola", 3);
+    String nombre = "Jorge";
+	System.out.println("El nombre " + nombre + " tiene " + longitud(nombre) + " letras.");
   }
 
 }
