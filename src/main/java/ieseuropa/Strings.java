@@ -7,9 +7,15 @@ public class Strings {
       System.out.print (a + " " + b + " ");
     }
   }
+	
+  public static void borrarAparicion (String a, String b) {
+	System.out.println(a.toLowerCase().replace(b.toLowerCase(), ""));
+  }
+	
   public static void main(String[] args) {
 		// TODO Auto-generated method stub
     repeticionStrings("hola", "caracola", 3);
+    borrarAparicion("Hola que tal estas?", "estas");
   }
 
 }
