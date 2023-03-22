@@ -37,6 +37,16 @@ public class Numeros {
       }
       return true;
   }
+
+  private static int factorial(int num) {
+		int fact = 1;
+		for(int i = 1; i <= num; i++) {
+			fact *= i;
+		}
+		return fact;
+	}
+
+
   public static void main(String[] args) {
 	// TODO Auto-generated method stub
 	numerosPell();
@@ -44,6 +54,10 @@ public class Numeros {
 	int num = 4;
 	if(esPrimo(num)) System.out.println("El número " + num + " es primo.");
 	else System.out.println("El número " + num + " no es pirmo.");
+
+	System.out.println("El factorial del número " + num + " es: " + factorial(num));
+
+
   }
 
 }
