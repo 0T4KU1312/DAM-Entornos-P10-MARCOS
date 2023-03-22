@@ -28,10 +28,23 @@ public class Numeros {
 		return true;
 		else return false;   
 	}   
+	
+	public static int counter = 2;
+        static boolean isLucky(int n){
+		if (counter > n)
+		    return true;
+		if (n % counter == 0)
+		    return false;
+		int next_position = n - (n / counter);
+		counter++;
+		return isLucky(next_position);
+        }
+	
   public static void main(String[] args) {
 	// TODO Auto-generated method stub
 	numerosPell();
 	System.out.println("\n" + isArmstrong(153));
+	System.out.println(isLucky(19));
   }
 
 }
