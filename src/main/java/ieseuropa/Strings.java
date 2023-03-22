@@ -9,6 +9,12 @@ public class Strings {
   }
 
 	
+  public static void borrarAparicion (String a, String b) {
+	System.out.println(a.toLowerCase().replace(b.toLowerCase(), ""));
+  }
+
+
+	
   public static String repeticionLetras (String a){
 	String b = "";
 	for (int i = 0; i < a.length(); i++) {
@@ -44,6 +50,9 @@ public class Strings {
     // TODO Auto-generated method stub
     repeticionStrings("hola", "caracola", 3);
 
+    borrarAparicion("Hola que tal estas?", "estas");
+
+
     System.out.println("\n" + repeticionLetras("NBA"));
 
 
@@ -55,6 +64,7 @@ public class Strings {
 
     char letra = 'o';
 	System.out.println("La letra " + letra + " se repite " + numOcurrencias(nombre, letra) + " veces en el nombre " + nombre + ".");
+
 
 
 
