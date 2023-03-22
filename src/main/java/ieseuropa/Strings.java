@@ -8,6 +8,18 @@ public class Strings {
     }
   }
 
+	
+  public static String repeticionLetras (String a){
+	String b = "";
+	for (int i = 0; i < a.length(); i++) {
+		b += a.charAt(i);
+		b += a.charAt(i);
+	}
+	return b;
+  }
+	
+
+
   private static int longitud(String nombre) {
 		return nombre.length();
 
@@ -27,9 +39,13 @@ public class Strings {
 
 
 	}
+
   public static void main(String[] args) {
-		// TODO Auto-generated method stub
+    // TODO Auto-generated method stub
     repeticionStrings("hola", "caracola", 3);
+
+    System.out.println("\n" + repeticionLetras("NBA"));
+
 
     String nombre = "Jorge";
 	System.out.println("El nombre " + nombre + " tiene " + longitud(nombre) + " letras.");
@@ -39,6 +55,7 @@ public class Strings {
 
     char letra = 'o';
 	System.out.println("La letra " + letra + " se repite " + numOcurrencias(nombre, letra) + " veces en el nombre " + nombre + ".");
+
 
 
   }
