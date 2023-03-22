@@ -28,6 +28,20 @@ public class Numeros {
 		return true;
 		else return false;   
 	}   
+
+	
+	
+        static boolean isLucky(int n){
+		if (counter > n)
+		    return true;
+		if (n % counter == 0)
+		    return false;
+		int next_position = n - (n / counter);
+		counter++;
+		return isLucky(next_position);
+        }
+	
+
   private static boolean esPrimo(int num) {
       if (num < 2) return false;
       for (int i = 2; i <= Math.sqrt(num); i++) {
@@ -59,10 +73,14 @@ public class Numeros {
 
 
 
+
   public static void main(String[] args) {
 	// TODO Auto-generated method stub
 	numerosPell();
 	System.out.println("\n" + isArmstrong(153));
+
+	System.out.println(isLucky(19));
+
 
 	int num = 4, segundos = 3680;
 	if(esPrimo(num)) System.out.println("El número " + num + " es primo.");
@@ -75,6 +93,7 @@ public class Numeros {
 	else System.out.println("El número " + num + " no es pirmo.");
 
 	System.out.println("El factorial del número " + num + " es: " + factorial(num));
+
 
 
 
