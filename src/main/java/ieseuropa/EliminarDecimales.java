@@ -2,12 +2,15 @@ package main.java.ieseuropa;
 
 public class EliminarDecimales {
 
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-
-		double num = 7.8;
+	private static double eliminarDec(double num) {
+		
 		int numEntero = (int) num;
-		System.out.println(numEntero);
+		return numEntero;
+	}
+	public static void main(String[] args) {
+		
+		double num = 5.5;
+		System.out.println("Eliminando sus decimales es: " + eliminarDec(num));
 	}
 
 }
