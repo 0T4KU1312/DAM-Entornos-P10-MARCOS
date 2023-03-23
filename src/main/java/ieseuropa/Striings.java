@@ -1,6 +1,6 @@
 package main.java.ieseuropa;
 
-public class Strings {
+public class Striings {
   
   public static void repeticionStrings (String a, String b, int num){
     for (int i = 0; i < num; i++){
@@ -28,13 +28,14 @@ public class Strings {
 
   private static int longitud(String nombre) {
 		return nombre.length();
-
+  }
 
   private static String mayus(String nombre) {
 		return nombre.toUpperCase();
 	}
 	private static String minus(String nombre) {
 		return nombre.toLowerCase();
+	}
 
   private static int numOcurrencias(String nombre, char letra) {
 		int num = 0;

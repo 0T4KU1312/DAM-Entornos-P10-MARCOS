@@ -1,6 +1,6 @@
 package main.java.ieseuropa;
 
-public class Numeros {
+public class Numero {
   
   public static void numerosPell (){
 	int n1=1, n2=0, pell;
@@ -29,9 +29,11 @@ public class Numeros {
 		else return false;   
 	}   
 
+ 
 	
-	
-        static boolean isLucky(int n){
+    public static boolean isLucky(int n){
+    	int counter=2;
+        	
 		if (counter > n)
 		    return true;
 		if (n % counter == 0)
@@ -88,7 +90,7 @@ public class Numeros {
 	System.out.println("El factorial del número " + num + " es: " + factorial(num));
 	System.out.println(calcularTiempo(segundos));
 
-	int num = 4;
+	 num = 4;
 	if(esPrimo(num)) System.out.println("El número " + num + " es primo.");
 	else System.out.println("El número " + num + " no es pirmo.");
 
