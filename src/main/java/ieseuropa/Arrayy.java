@@ -4,6 +4,12 @@ import java.util.Arrays;
 
 public class Arrayy {
 	
+
+	public static void ordenar(int[] a) {
+		Arrays.sort(a);
+	}
+
+
 	public static double mediana (int [] a) {
 		Arrays.sort(a);
 		double mediana = 0;
@@ -53,5 +59,6 @@ public class Arrayy {
 		System.out.println("La media es: " + calcularMedia(a));
 		System.out.println("El mínimo es: " + calcularMin(a));
 	}
+
 
 }
