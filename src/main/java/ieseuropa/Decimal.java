@@ -2,6 +2,7 @@ package main.java.ieseuropa;
 
 public class Decimal {
 
+
 	public static void calcularSoluciones(double a, double b, double c) {
 		double discriminante = b * b - 4 * a * c;
 		double x1, x2;
@@ -40,5 +41,7 @@ public class Decimal {
 		double num2 = 5.5;	
 		System.out.println("El numero redondeado es: " + numAlza(num));
 	}
+
+
 
 }

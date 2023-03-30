@@ -1,5 +1,6 @@
 package main.java.ieseuropa;
 
+
 import java.util.Arrays;
 
 public class Arrayy {
@@ -50,14 +51,22 @@ public class Arrayy {
 		} return min;
 	}
 
+public class Arrayy {
+
+
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		System.out.println("Hola");
+
 		int [] a = {3, 6, 2, 7, 4, 8};
 		System.out.println(mediana(a));
 		System.out.println("El número mayor del array es: " + mayor(a));
 		System.out.println("La media es: " + calcularMedia(a));
 		System.out.println("El mínimo es: " + calcularMin(a));
+	}
+
+
+
 	}
 
 

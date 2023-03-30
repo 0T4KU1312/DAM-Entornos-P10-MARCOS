@@ -1,6 +1,7 @@
 package main.java.ieseuropa;
 
 public class Numero {
+
   
   public static void numerosPell (){
 	int n1=1, n2=0, pell;
@@ -100,5 +101,7 @@ public class Numero {
 
 
   }
+
+
 
 }
